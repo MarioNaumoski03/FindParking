@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/parkingnamereservations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/LightBlue"
+        android:padding="16dp"
+        android:text="Name of parking place"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/citynamereservations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/backgroundpic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonreservations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parkingnamereservations"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <TextView
+        android:id="@+id/citynamereservations"
+        android:layout_width="166dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/peach_puff"
+        android:padding="16dp"
+        android:text="CityName"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dateandtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parkingnamereservations" />
+
+    <TextView
+        android:id="@+id/dateandtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/peach_puff"
+        android:padding="16dp"
+        android:text="Date and time"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonreservations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citynamereservations" />
+
+    <Button
+        android:id="@+id/buttonreservations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/peach_puff"
+        android:text="Go to Reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateandtime" />
+</androidx.constraintlayout.widget.ConstraintLayout>
